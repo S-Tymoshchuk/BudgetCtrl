@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 800px;
+    height: 600px;
+    margin: 80px auto;
+}
+
+.budget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    color: gray;
+    width: 450px;
+    margin: 0 auto;
+}
+
+.add__container {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 15px;
+    background-color: #f7f7f7;
+    border: 1px solid #e7e7e7;
+}
+
+input {
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.add__value {
+    width: 90px;
+    outline: none;
+}
+
+.container__result {
+    display: flex;
+    
+}
+
+.income{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+
+}
+.expenses{
+    margin-left: 5px;;
+}
+.income,
+.expenses {
+    width: 50%;
+    
+}
+
+
+.income__title,
+.expenses__title {
+    margin: 10px 0;
+}
+
+.expenses__list,
+.income__list {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    
+}
+
+.item__description,
+.income__description {
+    margin-right: auto;
+    font-size: 25px;
+}
+
+.item__value {
+    margin-right: 15px;
+}
+.wrapper{
+    margin: 20px 0;
+}
+.budget__income{
+background-color: rgb(16, 153, 73);
+
+}
+
+.budget__expenses{
+    background-color: rgb(206, 37, 37)
+}
+.budget__income,
+.budget__expenses{
+    display: flex;
+    color: white;
+    width: 410px;
+    padding: 3px 10px;
+}
+.budget__income--text,
+.budget__expenses--text{
+    margin-right: auto;
+}
+
+.add__btn{
+    font-size: 25px;
+    background: none;
+    border: none;
+    color: #28B9B5;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 10px;
+    outline: none;
+}
+.add__btn:active{
+    transform: translateY(2px);
+}
+.item__delete--btn{
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    color: rgb(209, 51, 51);
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+.item__delete--btn:active { transform: translateY(2px); }
+select{cursor: pointer;}
+
+.items{
+    display: flex;
+    border: 2px solid lightgray;
+    align-items: center;
+    padding: 2px 8px;
+}
